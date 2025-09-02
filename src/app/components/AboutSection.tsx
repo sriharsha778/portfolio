@@ -1,31 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaReact,
-  FaGitAlt,
-  FaNodeJs,
-  FaCode,
-  FaFigma,
-  FaLinux,
   FaPython,
+  FaJs,
   FaJava,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaCode,
+  FaLinux,
 } from "react-icons/fa";
 import {
   SiTypescript,
   SiNextdotjs,
+  SiReact,
   SiTailwindcss,
-  SiPostman,
-  SiMongodb,
   SiCplusplus,
   SiC,
   SiGo,
-  SiReact,
-} from "react-icons/si";
-
+  SiMongodb,
+  SiPostman,
+  SiExpress,
+  SiIntellijidea,
+  SiPycharm,
+} from "react-icons/si"; // 🆕 Import SiExpress
 export default function AboutSection() {
   const skills = [
     {
@@ -40,7 +40,7 @@ export default function AboutSection() {
         { name: "C++", icon: <SiCplusplus className="text-blue-700" /> },
         { name: "C", icon: <SiC className="text-gray-600" /> },
         { name: "Java", icon: <FaJava className="text-red-600" /> },
-        { name: "Go", icon: <SiGo className="text-sky-600" /> }, // 🆕 Added Go
+        { name: "Go", icon: <SiGo className="text-sky-600" /> },
       ],
     },
     {
@@ -53,13 +53,15 @@ export default function AboutSection() {
         },
         {
           name: "React Native",
-          icon: <SiReact className="text-cyan-500" />, // 🆕 Reusing React icon for RN
+          icon: <SiReact className="text-cyan-500" />,
         },
         {
           name: "Tailwind CSS",
           icon: <SiTailwindcss className="text-sky-400" />,
         },
         { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+        // 🆕 Added Express
+        { name: "Express", icon: <SiExpress className="text-gray-600" /> },
       ],
     },
     {
@@ -69,8 +71,12 @@ export default function AboutSection() {
         { name: "VSCode", icon: <FaCode className="text-blue-500" /> },
         { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
         { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
-        { name: "Figma", icon: <FaFigma className="text-pink-500" /> },
         { name: "Linux", icon: <FaLinux className="text-gray-400" /> },
+        {
+          name: "IntelliJ IDEA",
+          icon: <SiIntellijidea className="text-red-600" />,
+        },
+        { name: "PyCharm", icon: <SiPycharm className="text-sky-600" /> },
       ],
     },
   ];

@@ -15,14 +15,14 @@ export default function ContactSection() {
 
         <div className="flex justify-center gap-4 flex-wrap">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:harshasaisri484@gmail.com"
             className="btn btn-primary px-6"
           >
             📩 Email Me
           </a>
 
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/sri-harsha-sai-a04659249"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline btn-secondary px-6"
